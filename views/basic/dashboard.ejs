@@ -1,0 +1,13 @@
+<%- include('../partials/header')  %>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Dashboard</h1>
+            <p>Fetching First and Last name from database using sessional cookies: <%= user.fname  %> <%= user.lname %></p>
+            <p><em>Sessional Cookies persist as long as the session is not expired.</em></p>
+            <p><a class="btn btn-primary btn-lg" href="/set-cookie" role="button">Set Cookie</a></p>
+            <p><a class="btn btn-primary btn-lg" href="/set-wrong-cookie" role="button">Set Wrong Cookie</a></p>
+            <p><a class="btn btn-primary btn-lg" href="/remove-cookie" role="button">Remove Cookie</a></p>
+            <p><a class="btn btn-primary btn-lg" href="/private" role="button">Private Page</a></p>
+        </div>
+    </div>
+<%- include('../partials/footer')  %>
