@@ -19,7 +19,7 @@ export default {
     },
 
     getSetWrongCookie: (req, res, next) => {
-        res.cookie("token", "wrongvalue(correct value is 'computernetworking'")
+        res.cookie("token", "IAMWRONGVALUE")
         return res.redirect('/dashboard')
     }, 
 

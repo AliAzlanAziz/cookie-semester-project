@@ -6,6 +6,7 @@ const saltRounds = 10
 const LocalStrategy = passportlocal.Strategy
 
 export default function(passport){
+    
     passport.serializeUser(function(user, done) {
         if(user.userId)
             return done(null, { userId: user.userId })
